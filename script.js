@@ -37,6 +37,16 @@ console.log(jsonObj);
 //Part 3: Using Destructuring Assignment
 console.log("--------Part 3: Using Destructuring Assignment--------");
 
+console.log("extracted name and courses properties:");
+let {name, courses} = student
+console.log(name);
+console.log(courses);
+
+console.log("logging the first 2 scores from the array:");
+student.scores = [90,80,100,75]
+let [first,second,third,fourth] = student.scores
+console.log(first,second);
+
 
 //Part 4: The Spread Operator
 console.log("--------Part 4: The Spread Operator---------");
