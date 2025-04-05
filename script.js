@@ -62,7 +62,40 @@ let combindStudent = [...student.courses, ...student2.courses]
 console.log(combindStudent);
 
 
-
 //Part 5: Object Methods
 console.log("--------Part 5: Object Methods--------");
 
+student2.addCourses = function(courseName)
+{
+    this.courses.push(courseName)
+}
+
+student2.totalCourses = function()
+{
+    console.log(`total number of courses is ${this.courses.length}`);
+}
+
+student2.average = function()
+{
+    let sum = 0
+    let average = 0
+    let total_num = this.scores.length
+    for (let i=0;i<this.scores.length;i++)
+    {
+        sum += this.scores[i]
+    }
+    average = sum/total_num
+    console.log(average);
+}
+
+console.log("orignal course array:");
+console.log(student2.courses);
+
+console.log("\ndynamically added 'java' into the course array:");
+
+student2.addCourses("java")
+console.log(student2.courses);
+student2.totalCourses()
+
+console.log("average grade:");
+student2.average()
