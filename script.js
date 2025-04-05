@@ -51,6 +51,17 @@ console.log(first,second);
 //Part 4: The Spread Operator
 console.log("--------Part 4: The Spread Operator---------");
 
+console.log("New property graduatinoYear of cloned student obj:");
+let student2 = {...student}
+student2.graduationYear = 2025
+console.log(student2);
+
+console.log("Merged two courses arrays:");
+student2.courses = ["database","algorithm"]
+let combindStudent = [...student.courses, ...student2.courses]
+console.log(combindStudent);
+
+
 
 //Part 5: Object Methods
 console.log("--------Part 5: Object Methods--------");
