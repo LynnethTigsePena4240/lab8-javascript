@@ -17,7 +17,7 @@ console.log(`student's name: ${student.name} \nstudent's age: ${student.age}`);
 console.log("calling the method:");
 student.info()
 
-
+console.log("\n");
 
 
 //Part 2: Working with JSON
@@ -33,6 +33,7 @@ console.log("javascript object form:");
 let jsonObj = JSON.parse(studentJSON)
 console.log(jsonObj);
 
+console.log("\n");
 
 //Part 3: Using Destructuring Assignment
 console.log("--------Part 3: Using Destructuring Assignment--------");
