@@ -22,6 +22,17 @@ student.info()
 
 //Part 2: Working with JSON
 console.log("--------Part 2: Working with JSON--------");
+console.log("JSON string form:");
+
+let studentJSON = '{"name": "John","age": 25,"enrolled": true,"courses": ["operating sys","javascript","web development"]}'
+console.log(studentJSON);
+console.log("\n");
+
+console.log("javascript object form:");
+
+let jsonObj = JSON.parse(studentJSON)
+console.log(jsonObj);
+
 
 //Part 3: Using Destructuring Assignment
 console.log("--------Part 3: Using Destructuring Assignment--------");
