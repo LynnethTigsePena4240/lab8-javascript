@@ -48,6 +48,7 @@ student.scores = [90,80,100,75]
 let [first,second,third,fourth] = student.scores
 console.log(first,second);
 
+console.log("\n");
 
 //Part 4: The Spread Operator
 console.log("--------Part 4: The Spread Operator---------");
@@ -62,6 +63,7 @@ student2.courses = ["database","algorithm"]
 let combindStudent = [...student.courses, ...student2.courses]
 console.log(combindStudent);
 
+console.log("\n");
 
 //Part 5: Object Methods
 console.log("--------Part 5: Object Methods--------");
